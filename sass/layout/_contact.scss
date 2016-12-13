@@ -1,0 +1,190 @@
+.contact{
+    position: relative;
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: $spacing*10 0;
+    background: url(../img/layer3.jpg) center/cover no-repeat;
+    z-index: 2;
+    &::after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+    &::before{
+        display: block;
+        content: '';
+        background: rgba(0,0,0,.28);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    h2{
+        font: 400 4.2rem/1.5 $fontPrimary;
+        color: #fff;
+        margin: 0 0 $spacing*4;
+        text-align: center;
+        @media all and (min-width: $break-medium){
+            margin: 0 0 $spacing*10;
+        }
+    }
+    .title{
+        font: 400 2.4rem/1.5 $fontPrimary;
+        color:#fff;
+        margin: 0 0 $spacing*1.5;
+        text-align: center;
+        @media all and (min-width: $break-medium){
+            text-align: left;
+        }
+    }
+    .title+p{
+        font: 400 1.4rem/1.5 $fontPrimary;
+        color:#939393;
+        margin: 0 0 $spacing*4;
+        text-align: center;
+        
+        @media all and (min-width: $break-medium){
+            text-align: left;
+        }
+    }
+    .social{
+        margin: 0 auto $spacing*2;
+    }
+    .social li{
+        display: inline-block;
+        margin: 0 $spacing*1.5 0 0;
+    }
+    .social li a{
+        display: block;
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+        position: relative;
+        &::after{
+            display: block;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-family: $fontIcon;
+            color: #fff;
+            font-size: 22px;
+        }
+    }
+    .social .fb{
+        background: #3b5997;
+        &::after{
+            content:'\f09a';   
+        }
+        &:hover{
+            background: rgba(59,59,89,.9);
+        }
+    }
+     .social .tw{
+        background: #3ec2f3;
+        &::after{
+            content:'\f099';   
+        }
+        &:hover{
+            background: rgba(95,62,194,.9);
+        }
+    }
+    .social .google{
+        background: #e44c41;
+        &::after{
+            content:'\f0d5';   
+        }
+        &:hover{
+            background: rgba(89,228,76,.9);
+        }
+    }
+    .mail li{
+        font:400 1.4rem/1.5 $fontPrimary;
+        color:#bface2;
+    }
+    input{
+        display: block;
+        width: 100%;
+        padding: $spacing $spacing*2;
+        font: 400 1.6rem/1.5 $fontPrimary;
+        color: #c5c5c5;
+        border-radius: 5px;
+        border: none;
+        margin: 0 0 30px;
+        &:focus{
+            outline: none;
+        }
+        @media all and (min-width: $break-medium){
+            display: inline-block;
+            width: calc(50% - 15px);
+            float: left;
+            &:first-child{
+                margin: 0 30px 30px 0;
+            }
+            
+        }   
+    }
+      
+    }
+    textarea{
+        display: block;
+        min-height: 178px;
+        border-radius: 5px;
+        padding: $spacing $spacing*2;
+        font: 400 1.6rem/1.5 $fontPrimary;
+        color: #c5c5c5;
+        width: 100%;
+        border: none;
+        margin: 0 0 $spacing*3;
+        &:focus{
+            outline: none;
+        }
+    }
+.btnForm{
+    background: $activeColor;
+    border-radius: 5px;
+    padding: $spacing $spacing*5;
+    border: none;
+    font: 400 2.2rem/1.5 $fontPrimary;
+    color:#fff;
+    transition: all .3s ease-in;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        color:$activeColor;
+        background: #fff;
+        
+    }
+    @media all and (min-width: $break-medium){
+        float: right;
+    }
+}
+    .getIn{
+        margin: 0 0 $spacing*3;
+        padding: 0 $spacing;
+        @media all and (min-width: $break-medium){
+            float: left;
+            width: 50%;
+        }
+        
+        
+    }
+    .form{
+        padding: 0 $spacing;
+        @media all and (min-width: $break-medium){
+            float: right;
+            width: 50%;
+        
+        }
+        
+    }
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 $spacing;
+    z-index: 10000;
+}

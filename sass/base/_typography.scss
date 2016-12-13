@@ -1,0 +1,32 @@
+
+//open sans
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+//lobster
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+//MyriadProRegular
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+//font awesome
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.eot');
+    src: url('../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+         url('../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
+         url('../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+         url('../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('../libs/font-awesome-4.7.0/fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

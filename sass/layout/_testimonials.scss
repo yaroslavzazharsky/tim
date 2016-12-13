@@ -1,0 +1,96 @@
+.testimonials{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: $spacing*7 0 $spacing*5;
+    @media all and (min-width: $break-medium){
+        padding: $spacing*14 0 $spacing*10;
+    }
+    h2{
+        text-align: center;
+        font: 400 2.2rem/1.5 $fontPrimary;
+        color:#4e525d;
+        margin: 0 0 $spacing*5;
+        @media all and (min-width: $break-medium){
+             font: 400 4.2rem/1.5 $fontPrimary;
+            
+        }
+    }
+    .comment{
+        text-align: center;
+        p{
+            font: 400 1.9rem/1.5 $fontPrimary;
+            margin: 0 0 $spacing*4;
+            max-width: 280px;
+            margin: 0 auto;
+            padding: 0 $spacing*1.5;
+            @media all and (min-width: $break-medium){
+                max-width: 650px;
+            }
+        }
+        .autor{
+            color:#9a8faf;
+        }
+    }
+    .comments{
+        position: relative;
+    }
+    .slick-prev.slick-arrow, .slick-next.slick-arrow{
+        width: 50px;
+        height: 50px;
+        border-radius:50%; 
+        position: absolute;
+        border-width: 0px;
+        border-style: none;
+        cursor: pointer;
+        text-indent: -10000rem;
+        z-index: 50;
+        top: 50%;
+        background: transparent;
+        transition:all .2s ease-in;
+        &:focus{
+            outline: none;
+        }
+        &:hover{
+            background: rgba(0,0,0,.3)
+        }
+            
+  }
+    .slick-prev.slick-arrow{
+        left:$spacing;
+        @media all and (min-width: $break-medium){
+            left:$spacing*3;
+        }
+        &::after{
+            display: block;
+            content: '';
+            width: 12px;
+            height: 23px;
+            background-image: url(../img/sprite.png);
+            background-repeat: no-repeat;
+            background-position: -5px -5px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .slick-next.slick-arrow{
+        right:$spacing;
+        @media all and (min-width: $break-medium){
+            right:$spacing*3;
+        }
+        &::after{
+            display: block;
+            content: '';
+            width: 12px;
+            height: 23px;
+            background-image: url(../img/sprite.png);
+            background-repeat: no-repeat;
+            background-position:-29px -5px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        }
+}
